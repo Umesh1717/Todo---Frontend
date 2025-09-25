@@ -20,7 +20,7 @@ export default function TodoPage() {
   const [loading, setLoading] = useState(true);
 
   const perPage = 5;
-  const [userId, setUserId] = useState<string | null>("0");
+  const [userId, setUserId] = useState<string | null>(null);
 
   useEffect(() => {
     const storedId = localStorage.getItem("userID");
